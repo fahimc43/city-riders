@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
 
+
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 } else {
