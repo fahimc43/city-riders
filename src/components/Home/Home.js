@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import fakeData from '../../fakeData/data.json'
 import Vehicle from '../Vehicle/Vehicle';
+import './Home.css';
 
 const Home = () => {
     const [vehicles, setVehicles] = useState([]);
@@ -9,7 +10,7 @@ const Home = () => {
         setVehicles(fakeData)
     }, []);
     return (
-        <div style={{backgroundColor: "#18191A", minHeight: "100vh" }}>
+        <div className="bgImg">
             <div className="container">
                 <div className="d-flex flex-wrap justify-content-center">
                     {
